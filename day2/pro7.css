@@ -1,0 +1,34 @@
+/* Example 1: Font Family, Font Size, and Color */
+.example1 {
+    font-family: 'Courier New', Courier, monospace; /* Font Family */
+    font-size: 24px; /* Font Size */
+    color: darkgreen; /* Text Color */
+}
+
+/* Example 2: Font Weight, Font Style, and Color */
+.example2 {
+    font-weight: bold; /* Font Weight */
+    font-style: italic; /* Font Style */
+    color: darkred; /* Text Color */
+}
+
+/* Example 3: Text Alignment, Text Transform, and Color */
+.example3 {
+    text-align: right; /* Text Alignment */
+    text-transform: uppercase; /* Text Transform */
+    color: royalblue; /* Text Color */
+}
+
+/* Example 4: Text Decoration, Letter Spacing, and Color */
+.example4 {
+    text-decoration: underline; /* Text Decoration */
+    letter-spacing: 3px; /* Letter Spacing */
+    color: purple; /* Text Color */
+}
+
+/* Example 5: Text Shadow, Line Height, and Color */
+.example5 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text Shadow */
+    line-height: 1.8; /* Line Height */
+    color: darkblue; /* Text Color */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagonal Images with Border</title>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .image-container img {
+      width: 200px; /* Adjust size as needed */
+      height: auto;
+      border: 5px solid #000; /* Black border */
+      position: absolute;
+    }
+
+    .image1 {
+      transform: rotate(-30deg) translate(-50px, -50px);
+    }
+
+    .image2 {
+      transform: rotate(20deg) translate(50px, 50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="https://www.geturns.com/cdn/shop/articles/Thumbnail_1200x.jpg?v=1708690865" alt="Image 1" class="image1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI8_01SsJ6TC38D7OhukjdEqvgQOh4n1OOQN1bz6thD2qdHdOVhNsLAtVfYqBDKQ3zXZw&usqp=CAU" alt="Image 2" class="image2">
+  </div>
+</body>
+</html>

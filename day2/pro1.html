@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .navigation {
+            background-color: #333;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu > li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .menu > li:hover > a {
+            background-color: #444;
+        }
+
+        /* Dropdown styles */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 200px;
+            z-index: 1000;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="menu">
+                <!-- Electronics -->
+                <li class="dropdown">
+                    <a href="#electronics">Electronics</a>
+                    <div class="dropdown-content">
+                        <a href="#mobiles">Mobile Phones</a>
+                        <a href="#laptops">Laptops</a>
+                        <a href="#cameras">Cameras</a>
+                        <a href="#accessories">Accessories</a>
+                    </div>
+                </li>
+                <!-- Fashion -->
+                <li class="dropdown">
+                    <a href="#fashion">Fashion</a>
+                    <div class="dropdown-content">
+                        <a href="#mens-wear">Men's Wear</a>
+                        <a href="#womens-wear">Women's Wear</a>
+                        <a href="#kids-wear">Kids' Wear</a>
+                        <a href="#fashion-accessories">Fashion Accessories</a>
+                    </div>
+                </li>
+                <!-- Home Decor -->
+                <li class="dropdown">
+                    <a href="#home-decor">Home Decor</a>
+                    <div class="dropdown-content">
+                        <a href="#furniture">Furniture</a>
+                        <a href="#lighting">Lighting</a>
+                        <a href="#kitchenware">Kitchenware</a>
+                        <a href="#wall-art">Wall Art</a>
+                    </div>
+                </li>
+                <!-- Books -->
+                <li class="dropdown">
+                    <a href="#books">Books</a>
+                    <div class="dropdown-content">
+                        <a href="#fiction">Fiction</a>
+                        <a href="#non-fiction">Non-Fiction</a>
+                        <a href="#comics">Comics</a>
+                        <a href="#educational">Educational</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

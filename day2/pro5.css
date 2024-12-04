@@ -1,0 +1,14 @@
+/* Type Selector */
+p {
+    color: blue;
+}
+
+/* Class Selector */
+.first-paragraph {
+    color: green;
+}
+
+/* ID Selector */
+#second-paragraph {
+    color: red;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Parlor Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b8b8eb;
+        }
+
+        .container {
+            width: 50%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #040405;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f7f4f4;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #f6f6f6;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>THE GLAM SPOT</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Appointment Date -->
+            <div class="form-group">
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <!-- Services -->
+            <div class="form-group">
+                <label for="services">Select Service:</label>
+                <select id="services" name="services" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="facial">Facial</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="makeup">Makeup</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Additional Notes (Optional):</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter any specific requirements"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
